@@ -25,6 +25,8 @@ scripts/publish-content-site.sh
 scripts/run-admin.sh
 scripts/serve-website.sh
 scripts/package-downloads.sh
+clients/
+.github/
 
 # === Internal / development only ===
 Daily/

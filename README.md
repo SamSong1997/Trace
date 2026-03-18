@@ -71,9 +71,7 @@ Sources/Trace/
 ├── Utils/        # Helpers
 └── Resources/    # Icons, assets
 Tests/TraceTests/ # Unit tests
-clients/trace-win/# Windows client (Rust/egui, experimental)
-website/          # Product landing page
-scripts/          # Build, package, and dev scripts
+scripts/          # Build and dev scripts
 ```
 
 ## Tech Stack
@@ -81,7 +79,6 @@ scripts/          # Build, package, and dev scripts
 - **UI**: SwiftUI + AppKit (macOS native)
 - **Global hotkey**: `CGEvent` / `NSEvent.addGlobalMonitorForEvents`
 - **File I/O**: `FileManager` direct .md writes, UTF-8
-- **Windows port**: Rust + egui (experimental)
 - **No backend, no accounts, no network calls**
 
 ## Development
@@ -90,14 +87,6 @@ scripts/          # Build, package, and dev scripts
 swift build        # compile
 swift test         # run tests
 ./scripts/trace.sh check  # build + test
-```
-
-Windows client:
-
-```bash
-cd clients/trace-win
-cargo run          # run
-cargo test         # test
 ```
 
 ## Comparison
